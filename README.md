@@ -1,24 +1,64 @@
-# README
+# Bookwith📚
+アクセスしていただき、ありがとうございます。
+「bookwith」は、本専用の「欲しい物リストを作成するアプリ」です。
+書店に行った際に、「この本面白そうだな、だけど買うのは迷うな...🤔」といった経験はありませんか？
+その本を買わなかった理由は様々なケースが考えられますが、せっかく気になった本を忘れてしまうというのはもったいないと思いました。
+そこでスマホのカメラから本のバーコードを読み込むだけで本リストを作ることができるアプリを開発しました。
+ゲストログイン機能もありますので、お気軽に御覧ください☺️
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### URL
+https://bookwith-react-frontend.herokuapp.com/
+(2022/11/28 herokuの無料版が無くなることから本番環境は変更する予定です)
+### 作成経緯
+### 本アプリの特徴
+### ER図
 
-* Ruby version
+### インフラ構成図
+最後に書く予定
 
-* System dependencies
 
-* Configuration
+## 使用技術(非機能一覧)※詳細後述
+#### フロントエンド
+* React
+* Jest（テスト）
+* ESlint
+* pretter
+#### バックエンド
+* Ruby on Rails (apiモード)
+* Rspec (テスト)
+* Rubocop (コード解析ツール)
+* MySQL
+#### インフラ
+* Docker, docker-compose
+* heroku
+* AWS S3
+#### その他
 
-* Database creation
+## 実装機能
+#### （会員）
+* トップ（HOME画面）の閲覧
+* マイページ
+  * ログイン・ログアウト
+  * 退会
+  * プロフ編集
+* 本追加（手動（入力・検索）・カメラ）
+* 本詳細閲覧
+* 本検索
+#### （ゲストログイン）
+* トップ（HOME画面）の閲覧
+* ゲストログイン・ログアウト
+  * マイページ閲覧
+* 本追加（手動（入力・検索）・カメラ）
+* 本詳細閲覧
+* 本検索
+#### （非会員）
+* トップ（HOME画面）の閲覧
+* 新規会員登録
 
-* Database initialization
+## 使用技術詳細
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1, タイトルと概要、URL
+2, 使用技術
+3, AWS(インフラ)構成図
+4, 機能、非機能一覧
