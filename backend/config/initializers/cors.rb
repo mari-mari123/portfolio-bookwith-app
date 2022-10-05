@@ -14,3 +14,4 @@
 #       methods: [:get, :post, :put, :patch, :delete, :options, :head]
 #   end
 # end
+origins /localhost\:\d+/, /bookwith-react-frontend\.herokuapp\.com/
