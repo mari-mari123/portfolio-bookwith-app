@@ -1,0 +1,14 @@
+inherit_from:
+  - .rubocop_airbnb.yml
+
+require:
+  - rubocop-rspec
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+  - 'vendor/**/*'
+  - 'db/**/*'
+  - 'bin/*'
+  - 'config/**/*'
+  - 'spec/spec_helper.rb'
