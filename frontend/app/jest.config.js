@@ -1,4 +1,7 @@
 module.exports = {
+  "env": {
+    "node": true,
+  },
   "roots": [
     "<rootDir>/src"
   ],
