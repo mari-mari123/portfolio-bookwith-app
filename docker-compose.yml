@@ -10,6 +10,7 @@ services:
     volumes:
       - mysql-data:/var/lib/mysql
       - /tmp/dockerdir:/etc/mysql/conf.d/
+    command: mysqld --innodb_use_native_aio=0
     ports:
       - 3306:3306
 
